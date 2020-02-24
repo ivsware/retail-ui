@@ -1,7 +1,7 @@
-import { Theme } from '../../../lib/theming/Theme';
-import { ThemeFactory } from '../../../lib/theming/ThemeFactory';
-import { FLAT_THEME } from '../../../lib/theming/themes/FlatTheme';
-import { IS_PROXY_SUPPORTED } from '../../internal/Supports';
+import { Theme } from '../../../../lib/theming/Theme';
+import { ThemeFactory } from '../../../../lib/theming/ThemeFactory';
+import { FLAT_THEME } from '../../../../lib/theming/themes/FlatTheme';
+import { IS_PROXY_SUPPORTED } from '../../Supports';
 
 import { formatSourceCode } from './FormatSourceCode';
 

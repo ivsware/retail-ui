@@ -8,7 +8,7 @@ import { Theme } from '../../lib/theming/Theme';
 import { DatePickerLocale, DatePickerLocaleHelper } from '../DatePicker/locale';
 import { InputLikeText } from '../internal/InputLikeText';
 import { locale } from '../LocaleProvider/decorators';
-import { ThemeConsumer } from '../ThemeConsumer';
+import { ThemeContext } from '../../lib/theming/ThemeContext';
 import { CalendarIcon } from '../internal/icons/16px';
 
 import { DateFragmentsView } from './DateFragmentsView';
@@ -161,12 +161,12 @@ export class DateInput extends React.Component<DateInputProps, DateInputState> {
 
   public render() {
     return (
-      <ThemeConsumer>
+      <ThemeContext.Consumer>
         {theme => {
           this.theme = theme;
           return this.renderMain();
         }}
-      </ThemeConsumer>
+      </ThemeContext.Consumer>
     );
   }
 

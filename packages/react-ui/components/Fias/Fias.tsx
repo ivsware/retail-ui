@@ -6,7 +6,7 @@ import { Link } from '../Link';
 import { LocaleProvider } from '../LocaleProvider';
 import { locale } from '../LocaleProvider/decorators';
 import { cx } from '../../lib/theming/Emotion';
-import { ThemeConsumer } from '../ThemeConsumer';
+import { ThemeContext } from '../../lib/theming/ThemeContext';
 import { Theme } from '../../lib/theming/Theme';
 import { EditIcon } from '../internal/icons/16px';
 
@@ -212,12 +212,12 @@ export class Fias extends React.Component<FiasProps, FiasState> {
 
   public render() {
     return (
-      <ThemeConsumer>
+      <ThemeContext.Consumer>
         {theme => {
           this.theme = theme;
           return this.renderMain();
         }}
-      </ThemeConsumer>
+      </ThemeContext.Consumer>
     );
   }
 
