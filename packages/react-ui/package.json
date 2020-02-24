@@ -1,6 +1,6 @@
 {
   "name": "@skbkontur/react-ui",
-  "version": "1.9.0",
+  "version": "0.0.0-d8a3d90126",
   "description": "UI Components",
   "main": "dist/index.js",
   "repository": {
@@ -155,5 +155,9 @@
     "setupFilesAfterEnv": [
       "<rootDir>/test-setup.js"
     ]
+  },
+  "homepage": "https://tech.skbkontur.ru/react-ui/unstable/0.0.0-d8a3d90126/",
+  "publishConfig": {
+    "tag": "unstable"
   }
 }
